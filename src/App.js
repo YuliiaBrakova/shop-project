@@ -4,16 +4,51 @@ import React from 'react'
 const App = () => {
 		return (
 		<div>
-			<Header />
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, porro doloribus. Aliquam at natus inventore illum incidunt. Dolorem deleniti doloribus sequi culpa corrupti? Aliquam error ullam molestias dolorem vel earum?</p>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque assumenda, repellat odio libero molestiae odit obcaecati, blanditiis temporibus, esse pariatur eligendi. Minima hic ratione unde maxime quae in esse nam!</p>
+			<header className="header">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-3">
+							<div className="logo">
+								<img src="img/logo.png" alt="" />
+							</div>
+						</div>
+						<div className="col-lg-6">
+							<div className="menu">
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/">Products</a></li>
+									<li><a href="/">Payment</a></li>
+									<li><a href="/">Shipping</a></li>
+								</ul>
+							</div>
+						</div>
+						<div className="col-lg-3">
+							<div className="cart text-center">
+								<div className="products-count">0</div>
+								<div className="products-price">$500</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main className="main">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-3">
+							
+						</div>
+						<div className="col-lg-9">
+							
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer className="footer">
+				
+			</footer>
 		</div>
 		)
 }
 
-const Header = () => {
-	return (
-		<h1>Hello1</h1>
-	)
-}
+
 export default App
