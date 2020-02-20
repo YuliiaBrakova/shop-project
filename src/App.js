@@ -1,5 +1,13 @@
 import React from 'react'
 
+import './reset.css'
+import './base.css'
+import './cart.css'
+import './header.css'
+import './menu.css'
+
+
+
 
 const App = () => {
 		return (
