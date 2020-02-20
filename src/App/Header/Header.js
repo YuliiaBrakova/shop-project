@@ -1,5 +1,9 @@
 import React from 'react'
 
+import './cart.css'
+import './header.css'
+import './menu.css'
+
 const Header = () => {
 	return (
 		<header className="header">
