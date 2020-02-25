@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './ProductListItem.css'
 
 
 
@@ -11,7 +11,7 @@ const ProductListItem = () => {
             <div className="product-features">Type: phone</div>
             <div className="product-features">Capacite: 64 Gb</div>
             <div className="product-price">500$</div>
-            <div className="add-to-cart-btn">Add to cart</div>
+            <div className="btn-add-to-cart">Add to cart</div>
         </div>
     )
 }
