@@ -37,7 +37,7 @@ const ProductsList = () => {
                     <div className="col-lg-6">
                         <ProductListItem
                             name="iPhone 8"
-                            description="This is iPhone X"
+                            description="This is iPhone 8"
                             type="phone"
                             capacity="128"
                             price="1500"
