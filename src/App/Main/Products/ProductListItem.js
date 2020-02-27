@@ -26,7 +26,7 @@ const ProductListItem = ({
             <div className="product-features">Capacity: {capacity}</div>
             <div className="product_quantity">
                 <button>-</button>
-                <input type="text" value="1"/>
+                <input type="text" value="1" readOnly/>
                 <button>+</button>
             </div>
             <div className="product-price">{price}$</div>
@@ -51,6 +51,7 @@ ProductListItem.propTypes = {
 // ProductListItem.defaultProps = {
 //     image: "/images/no-image.png"
 // }
+
 
 
 export default ProductListItem
