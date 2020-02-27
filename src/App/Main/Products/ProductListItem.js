@@ -4,15 +4,22 @@ import './ProductListItem.css'
 
 
 
+
+
 const ProductListItem = ({
+    image,
     name,
-    description,
+    description ="No description",
     type,
     capacity,
-    price
+    price,
+    
 }) => {
     return (
         <div className="product-list-item">
+            <div className="product-img">
+                <img src={image} alt={description} title={name} />
+            </div>
             <div className="product-title">{name}</div>
             <div className="product-description">{description}</div>
             <div className="product-features">Type: {type}</div>
@@ -31,9 +38,9 @@ ProductListItem.propTypes = {
     price:PropTypes.number.isRequired,
 }
 
-ProductListItem.defaultProps = {
-    description: "No description ..."
-}
+// ProductListItem.defaultProps = {
+//     description: "No description ..."
+// }
 
 
 export default ProductListItem
