@@ -36,11 +36,16 @@ ProductListItem.propTypes = {
     type:PropTypes.string.isRequired,
     capacity:PropTypes.number.isRequired,
     price:PropTypes.number.isRequired,
+    image:PropTypes.string,
 }
 
 // ProductListItem.defaultProps = {
 //     description: "No description ..."
 // }
+
+ProductListItem.defaultProps = {
+    image: "/images/no-image.png"
+}
 
 
 export default ProductListItem
