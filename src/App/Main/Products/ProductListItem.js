@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './ProductListItem.css'
+import ProductQuantity from './ProductQuantity'
 
 
 
@@ -25,15 +26,14 @@ const ProductListItem = ({
             <div className="product-features">Type: {type}</div>
             <div className="product-features">Capacity: {capacity}</div>
             <div className="product_quantity">
-                <button>-</button>
-                <input type="text" value="1" readOnly/>
-                <button>+</button>
+                <ProductQuantity/>
             </div>
             <div className="product-price">{price}$</div>
             <div className="btn-add-to-cart">Add to cart</div>
         </div>
     )
 }
+
 
 ProductListItem.propTypes = {
     name:PropTypes.string.isRequired,
@@ -51,6 +51,7 @@ ProductListItem.propTypes = {
 // ProductListItem.defaultProps = {
 //     image: "/images/no-image.png"
 // }
+
 
 
 
